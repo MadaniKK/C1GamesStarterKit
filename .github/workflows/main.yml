@@ -11,7 +11,7 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v2
       - name: Update Changelog
-        uses: MadaniKK/add-changeset@main
+        uses: ashwin-pc/test-github-action@main
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           changeset_path: changelogs/fragments
