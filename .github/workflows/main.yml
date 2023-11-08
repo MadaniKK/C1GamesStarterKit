@@ -13,5 +13,5 @@ jobs:
       - name: Update Changelog
         uses: MadaniKK/add-changeset@main
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT_TOKEN }}
           changeset_path: changelogs/fragments
