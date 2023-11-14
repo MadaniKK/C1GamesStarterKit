@@ -3,6 +3,8 @@ name: Update Changelog
 on:
   pull_request:
     types: [synchronize, opened]
+    paths-ignore:
+      - 'changelogs/fragments/**/*'
 
 jobs:
   update-changelog:
@@ -13,5 +15,6 @@ jobs:
       - name: Update Changelog
         uses: MadaniKK/add-changeset@main
         with:
-          token: ${{ secrets.PAT_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN}}
           changeset_path: changelogs/fragments
+
