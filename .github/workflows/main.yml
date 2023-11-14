@@ -2,7 +2,7 @@ name: Update Changelog
 
 on:
   pull_request:
-    types: [synchronize, opened]
+    types: [synchronize, opened, edited]
     paths-ignore:
       - 'changelogs/fragments/**/*'
 
